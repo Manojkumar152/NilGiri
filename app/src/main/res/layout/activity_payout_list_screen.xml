@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.PayoutListScreen">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/light_dark_grey"
+        android:gravity="center"
+        android:textSize="@dimen/med_text_size"
+        android:background="@drawable/nilgiri_logo"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Payouts Detail"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/light_dark_grey"
+        android:gravity="center"
+        android:textSize="@dimen/med_text_size"
+        android:background="@color/background_light"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

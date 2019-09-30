@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+    android:layout_marginBottom="8dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="12dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="left"
+                    android:text="Send Money"
+                    android:textAllCaps="false"
+                    android:maxLines="1"
+                    android:textColor="@color/light_dark_grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left"
+                    android:text="To harry jackson"
+                    android:textAllCaps="false"
+                    android:maxLines="1"
+                    android:textColor="@color/light_dark_grey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:text="10/01/2019"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="2dp"
+                    android:maxLines="1"
+                    android:textColor="@color/light_dark_grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="$12200.60"
+                    android:textAllCaps="false"
+                    android:maxLines="1"
+                    android:textColor="@color/light_dark_grey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="14dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:padding="0dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/txt_Type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:padding="6dp"
+                            android:text="Type"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:visibility="gone"/>
+                        <TextView
+                            android:id="@+id/txt_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6dp"
+                            android:layout_weight="0.5"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="Amount"
+                            android:textAllCaps="false"
+                            android:textColor="@color/light_dark_grey"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="6dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:hint="Type"
+                            android:textAllCaps="false"
+                            android:textColor="@color/light_dark_grey"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_admin_charge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6dp"
+                            android:layout_weight="0.5"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="Admin Charge"
+                            android:textAllCaps="false"
+                            android:textColor="@color/light_dark_grey"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/admin_charge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="6dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:hint="AdminCharge"
+                            android:textAllCaps="false"
+                            android:textColor="@color/light_dark_grey"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/txt_paid_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:padding="6dp"
+                            android:text="Amount"
+                            android:textAllCaps="false"
+                            android:textColor="@color/light_dark_grey"
+                            android:textSize="12sp"
+                            android:visibility="visible"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/paid_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="6dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:hint="PaidAmount"
+                            android:textAllCaps="false"
+                            android:textColor="@color/light_dark_grey"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:padding="6dp"
+                        android:hint="Date"
+                        android:textAllCaps="false"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="12sp"
+                        android:visibility="visible"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/layout_view"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/rectangle_shape_green"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:maxLines="1"
+            android:gravity="center"
+            android:text="Wallet"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_currency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_wallet"
+            android:layout_marginTop="24dp"
+            android:maxLines="1"
+            android:gravity="center"
+            android:text="$12200.60"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="39sp" />
+
+        <TextView
+            android:id="@+id/tv_current_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_currency"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="16dp"
+            android:maxLines="1"
+            android:gravity="center"
+            android:text="Current Balance"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

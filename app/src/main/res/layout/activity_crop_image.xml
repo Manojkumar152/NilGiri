@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/black"
+    tools:context="CropImageActivity">
+
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:id="@+id/CropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        app:cropFixAspectRatio="true" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/crop_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:background="@android:color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+
+            <ImageView
+                android:id="@+id/crop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:layout_toRightOf="@id/cancel"
+                android:src="@android:drawable/ic_menu_crop"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

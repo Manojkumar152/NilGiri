@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Nilgiri App</string>
+    <string name="bio">Emma Watson</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Nilgiri</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Logout</string>
+    <string name="temp_jpg">temp.jpg</string>
+    <string name="error_capturing_img">Error while capturing image</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="update_KYC">Update KYC</string>
+    <string name="profile">Profile</string>
+    <string name="add_client">Add Client</string>
+    <string name="admin_charge">Admin charge</string>
+    <string name="debit">Debit</string>
+    <string name="credit">Credit</string>
+    <string name="dashboard">Dashboard</string>
+
+    <string name="title_profile">Profile</string>
+    <string name="overview">OverView this is the view to move text on runtime hope this will work..</string>
+    <string name="income">Inactive</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="direct">Direct</string>
+    <string name="allteam">All Team</string>
+    <string name="non_active_members">In Active \nMembers</string>
+    <string name="active_members">Active \nMembers</string>
+    <string name="direct_members">Direct\nMembers</string>
+    <string name="sales">Sales</string>
+    <string name="logout">Logout</string>
+    <string name="user_name">User Name</string>
+    <string name="user_address">user address</string>
+    <string name="user_email">user email</string>
+    <string name="city">city</string>
+    <string name="state">state</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="updatekyc_title">UpdateKYC</string>
+    <string name="preview_text">Preview</string>
+    <string name="govt_id_proof">Browse Photos of Govt Id Proof</string>
+    <string name="pan_card_proof">Browse Photos of Pan Card</string>
+    <string name="bank_stmnt">Browse bank statement</string>
+    <string name="update_text">Update</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="payout">Payout</string>
+    <string name="top_up">Top Up</string>
+    <string name="shopping">Shopping</string>
+    <string name="topup">Top Up wallet</string>
+    <string name="shopping_text">Shopping wallet</string>
+    <string name="payout_text">Payout wallet</string>
+    <string name="internet_error">Internet Connection Error..</string>
+    <string name="account_number">Account no.</string>
+    <string name="acc._holder_name">Account holder name</string>
+    <string name="ifsc_code">IFSC</string>
+    <string name="incorrect_ifsc">IFSC code is Incorrect</string>
+</resources>

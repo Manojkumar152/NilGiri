@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+       <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.color">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+    <style name="OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_camera</item>
+    </style>
+    <style name="ThemeToolbar" parent="Theme.AppCompat.Light">
+
+        <!-- navigation icon color -->
+        <item name="colorControlNormal">@color/green</item>
+        <!-- color of the menu overflow icon -->
+       <!-- <item name="android:textColorSecondary">@color/my_color</item>-->
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="MyDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@color/light_grey</item>
+    </style>
+
+    <style name="fp_detail">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/TextMedium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="dashboard_text" parent="fp_detail">
+        <item name="android:textSize">@dimen/TextMedium</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="NavigationTextView" >
+        <item name="android:drawablePadding">@dimen/horizontal_margin</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:paddingTop">@dimen/_5sdp</item>
+        <item name="android:paddingBottom">@dimen/_5sdp</item>
+        <item name="android:foreground">@drawable/ripple</item>
+        <item name="android:clickable">true</item>
+        <item name="android:selectable">false</item>
+        <item name="android:background">@drawable/navigation_items</item>
+        <item name="android:textColor">@color/light_dark_grey</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="tv_link">
+        <item name="android:textSize">@dimen/TextMedium</item>
+        <item name="android:textColor">@color/selectable_txt</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/vertical_margin</item>
+        <item name="android:clickable">true</item>
+        <item name="android:selectable">true</item>
+        <item name="android:foreground">@drawable/ripple</item>
+    </style>
+    <style name="nav_link" parent="tv_link">
+        <item name="android:layout_marginLeft">@dimen/horizontal_margin</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/light_dark_grey</item>
+    </style>
+
+    <dimen name="TextMedium">14sp</dimen>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+<!--
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/add_client"
+            android:icon="@drawable/ic_add_client"
+            android:title="Add Client"
+            android:visible="false"/>
+        <item
+            android:id="@+id/update_kyc"
+            android:icon="@drawable/ic_update_kyc"
+            android:title="Update Kyc" />
+        <item
+            android:id="@+id/tree_view"
+            android:icon="@drawable/ic_my_treeview"
+            android:title="My Tree View" />
+        <item
+            android:id="@+id/payouts"
+            android:icon="@drawable/ic_payouts"
+            android:title="Payouts" />
+        <item
+            android:id="@+id/reports"
+            android:icon="@drawable/ic_reports"
+            android:title="Reports" />
+        <item
+            android:id="@+id/order_history"
+            android:icon="@drawable/ic_order_history"
+            android:title="Order History" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/navigation_drawer_item3"
+            android:icon="@android:drawable/ic_menu_share"
+            android:title="Wallet"
+            app:actionLayout="@layout/spinner_layout"/>
+        <item
+            android:id="@+id/wallet"
+            android:icon="@drawable/ic_wallet"
+            android:title="Wallet"/>
+
+    </group>
+    <group android:checkableBehavior="single">
+    <item android:title="Team">
+        <item
+            android:id="@+id/my_team"
+            android:icon="@drawable/ic_my_team"
+            android:title="My Team" />
+        <item
+            android:id="@+id/left_team"
+            android:icon="@drawable/ic_my_treeview"
+            android:title="Left Team"/>
+        <item
+            android:id="@+id/right_team"
+            android:icon="@drawable/ic_my_treeview"
+            android:title="Right Team" />
+        <item
+            android:id="@+id/direct_team"
+            android:icon="@drawable/ic_direct_team"
+            android:title="Direct Team" />
+</item>
+    </group>-->
+
+</menu>

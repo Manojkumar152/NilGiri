@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/relative_current_balance"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_current_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangular_shape_orange" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="User Name"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_below="@id/tv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:hint="username"
+            android:textColorHint="@color/white"
+            android:minLines="1"
+            android:maxLength="16"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/tv_current_balance"
+            android:layout_below="@id/tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Wallet No."
+            android:textSize="18sp"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/tv_wallet_no"
+            android:layout_below="@id/tv_current_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="number"
+            android:maxLength="20"
+            android:minLines="1"
+            android:text="1234 5678 1223 3455"
+            android:textSize="18sp"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</RelativeLayout>
+</LinearLayout>

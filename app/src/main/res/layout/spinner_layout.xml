@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:el_duration="500"
+        android:visibility="invisible"
+        app:el_expanded="false"
+        android:layout_margin="20dp"
+        app:el_parallax="0.5"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/rectangular_with_border">
+                <TextView
+                    android:id="@+id/payout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active right: "
+                    android:textColor="@color/light_dark_grey"/>
+                <TextView
+                    android:id="@+id/topup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_dark_grey"/>
+            <TextView
+                android:id="@+id/shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/light_dark_grey"/>
+            </LinearLayout>
+    </net.cachapa.expandablelayout.ExpandableLayout>

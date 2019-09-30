@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Update KYC"
+        android:textColor="@color/light_dark_grey"
+        android:gravity="center"
+        android:textSize="@dimen/med_text_size"
+        android:background="@color/background_light"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:layout_below="@+id/title"
+        android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/preview_text"/>
+
+        <RelativeLayout
+            android:id="@+id/pager_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="220dp">
+            </android.support.v4.view.ViewPager>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_layout_view"
+            android:layout_marginTop="290dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_image1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/default_dot"/>
+            <ImageView
+                android:id="@+id/iv_image2"
+                android:layout_toRightOf="@id/iv_image1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/default_dot"/>
+            <ImageView
+                android:id="@+id/iv_image3"
+                android:layout_toRightOf="@id/iv_image2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/default_dot"/>
+
+        </RelativeLayout>
+    <Button
+        android:id="@+id/upload_govt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/pager_layout"
+        android:text="@string/govt_id_proof"
+        android:textColor="@color/background_light"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/ic_camera_update"
+        android:paddingLeft="16dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:background="@drawable/rectangular_shape_green_multicolor"/>
+
+    <Button
+        android:id="@+id/upload_pan_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/upload_govt_id"
+        android:text="@string/pan_card_proof"
+        android:textColor="@color/background_light"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/ic_camera_update"
+        android:paddingLeft="16dp"
+        android:paddingTop="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingBottom="6dp"
+        android:background="@drawable/rectangular_shape_green_multicolor" />
+
+    <Button
+        android:id="@+id/upload_bank_statement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/upload_pan_card"
+        android:text="@string/bank_stmnt"
+        android:textColor="@color/background_light"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/ic_camera_update"
+        android:paddingLeft="16dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rectangular_shape_green_multicolor"/>
+       <!-- <ProgressBar
+            android:id="@+id/progressBar_cyclic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upload_bank_statement"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>-->
+
+    </RelativeLayout>
+
+   <!-- <androidx.cardview.widget.CardView
+        android:id="@+id/upload_govt_id"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/blue"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/pager"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/camera_icon" />
+
+            <TextView
+                android:id="@+id/govt_proof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="@string/govt_id_proof"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/upload_govt_id"
+        android:id="@+id/upload_pan_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/camera_icon"/>
+
+            <TextView
+                android:id="@+id/pan_card"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pan_card_proof"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/upload_bank_statement"
+        android:layout_below="@id/upload_pan_card"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/camera_icon"/>
+
+            <TextView
+                android:id="@+id/bank_stmnt"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bank_stmnt"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/app_color"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/upload_bank_statement"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_text"/>
+    </androidx.cardview.widget.CardView>-->
+    </ScrollView>
+    <Button
+        android:id="@+id/update_kyc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:text="@string/update_text"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/btn_text"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_background"/>
+</RelativeLayout>
