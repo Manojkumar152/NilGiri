@@ -10,7 +10,6 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="large_text_size">20sp</dimen>
     <dimen name="horizontal_margin">@dimen/_15sdp</dimen>
-    <dimen name="TextXMedium">@dimen/_15sdp</dimen>
     <dimen name="vertical_margin">@dimen/_10sdp</dimen>
     <dimen name="med_text_size">16sp</dimen>
     <dimen name="text_size">14sp</dimen>

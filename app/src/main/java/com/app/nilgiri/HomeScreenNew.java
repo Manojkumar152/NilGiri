@@ -30,16 +30,15 @@ import com.app.nilgiri.Fragments.AdminCharge;
 import com.app.nilgiri.Fragments.DashBoardFragment;
 import com.app.nilgiri.Fragments.FragmentBankDetail;
 import com.app.nilgiri.Fragments.FragmentDirectTeam;
+import com.app.nilgiri.Fragments.FragmentLeftTeam;
 import com.app.nilgiri.Fragments.FragmentMyTeam;
 import com.app.nilgiri.Fragments.FragmentOrderHistory;
 import com.app.nilgiri.Fragments.FragmentPayout;
 import com.app.nilgiri.Fragments.FragmentProfile;
 import com.app.nilgiri.Fragments.FragmentRightTeam;
 import com.app.nilgiri.Fragments.FragmentUpdateKYC;
-import com.app.nilgiri.Fragments.LeftTeam;
 import com.app.nilgiri.Fragments.MyTreeViewFragment;
 import com.app.nilgiri.Fragments.PayoutWalletFragment;
-import com.app.nilgiri.Fragments.ReportFragment;
 import com.app.nilgiri.Fragments.ShoppingWalletFragment;
 import com.app.nilgiri.Fragments.TDSCharge;
 import com.app.nilgiri.Fragments.TopupWalletFragment;
@@ -297,7 +296,7 @@ public class HomeScreenNew extends BaseActivity implements View.OnClickListener,
                 setFragment(new FragmentMyTeam());
                 break;
             case R.id.left_team:
-                setFragment(new LeftTeam());
+                setFragment(new FragmentLeftTeam());
                 break;
             case R.id.right_team:
                 setFragment(new FragmentRightTeam());

@@ -55,11 +55,11 @@ public class FragmentLeftTeam extends Fragment {
     private  int mLoadedItems = 0;
     private BaseActivity baseActivity;
     List<MyTeamLeftModel.DataBean> tempData;
-    ArrayList<MyTeamLeftModel.DataBean> listData  = new ArrayList<>();
+    ArrayList<MyTeamLeftModel.DataBean.LeftTeamBean> listData  = new ArrayList<>();
     SharedPreferences pref;
 
     private  boolean mIsLoading = false;
-   private boolean mIsLastPage = false;
+    private boolean mIsLastPage = false;
 
     // amount of items you want to load per page
     final int pageSize = 20;
@@ -188,7 +188,6 @@ public class FragmentLeftTeam extends Fragment {
         if (getActivity()!= null) {
             ((BaseActivity)getActivity()).showProgress();
         }
-
         ApiInterface service= RetrofitClient.getClient().create(ApiInterface.class);
         Call<MyTeamLeftModel> call=service.getLeftTeam(company_id,Urls.API_KEY);
         call.enqueue(new Callback<MyTeamLeftModel>() {
@@ -196,7 +195,7 @@ public class FragmentLeftTeam extends Fragment {
             public void onResponse(Call<MyTeamLeftModel> call, Response<MyTeamLeftModel> response) {
                 Log.e("Response","Response"+response.body().getData());
                 if(response.body().getStatus()==1){
-                    setData(response.body());
+                    setData(response.body().getData());
                 }else{
                     DisplaySnackBar.showSnackBar(getActivity(),response.body().getMessage());
                 }
@@ -215,11 +214,9 @@ public class FragmentLeftTeam extends Fragment {
         });
     }
 
-    private void setData(MyTeamLeftModel body) {
-        Log.e("Data","DataMyTEam"+body.getData());
-        tempData = body.getData();
+    private void setData(MyTeamLeftModel.DataBean data) {
         listData.clear();
-        listData.addAll(tempData);
+        listData.addAll(data.getLeftTeam());
         adapter.notifyDataSetChanged();
     }
 }

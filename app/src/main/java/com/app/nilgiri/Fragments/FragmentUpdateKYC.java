@@ -231,7 +231,7 @@ public class FragmentUpdateKYC extends Fragment implements View.OnClickListener 
         // Continue only if the File was successfully created
         if (photoFile != null) {
             Uri photoURI = FileProvider.getUriForFile(getActivity(),
-                    "lbmsolutions.com.lbmapp.fileprovider",
+                    "com.app.nilgiri.fileprovider",
                     photoFile);
             takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
             startActivityForResult(takePictureIntent, CAMERA_REQUEST);
@@ -398,7 +398,7 @@ public class FragmentUpdateKYC extends Fragment implements View.OnClickListener 
             cropIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             photoFile = new File(pic);
             Uri contentUri = FileProvider.getUriForFile(getContext(),
-                    "lbmsolutions.com.lbmapp.fileprovider", photoFile);
+                    "com.app.nilgiri.fileprovider", photoFile);
 
             // contentUri = Uri.fromFile(f);
             if (photoFile != null) {
