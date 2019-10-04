@@ -286,9 +286,18 @@
                 </RelativeLayout>
             </RelativeLayout>
         </android.support.v7.widget.CardView>
+
+            <SearchView
+                android:id="@+id/search"
+                android:layout_below="@+id/rl_layout_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+            </SearchView>
             <View
                 android:id="@+id/view"
-                android:layout_below="@+id/rl_layout_img"
+                android:layout_below="@+id/search"
                 android:layout_width="match_parent"
                 android:layout_marginTop="12dp"
                 android:layout_height="1dp"
@@ -313,7 +322,6 @@
                     android:textSize="14sp" />
             </RelativeLayout>
 
-
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recyclerwview"
                 android:layout_marginTop="10dp"
@@ -324,14 +332,21 @@
 
             </android.support.v7.widget.RecyclerView>
 
-           <!-- <ProgressBar
-                android:id="@+id/progressBar"
-                android:visibility="gone"
-                android:layout_alignParentBottom="true"
-                android:textColor="@color/colorAccent"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                />-->
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    />
+            </RelativeLayout>
+
         </RelativeLayout>
 </LinearLayout>

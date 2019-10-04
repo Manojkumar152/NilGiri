@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import com.app.nilgiri.Adapter.MyTeamAdapter;
@@ -95,6 +96,11 @@ public class FragmentMyTeam extends Fragment {
             mSales.setBackgroundResource(R.drawable.inactive_user_bg);
         }
         mAction = v.findViewById(R.id.txt_action);
+
+
+        SearchView searchView=(SearchView)v.findViewById(R.id.search);
+        search(searchView);
+
     }
 
     private void adapter(){
@@ -113,15 +119,17 @@ public class FragmentMyTeam extends Fragment {
         call.enqueue(new Callback<MyTeamModel>() {
             @Override
             public void onResponse(Call<MyTeamModel> call, Response<MyTeamModel> response) {
+
+                if (getActivity()!= null) {
+                    ((BaseActivity)getActivity()).hideProgress();
+                }
+
                 Log.e("Response","Response"+response.body().getData());
                 if(response.body().getStatus()==1){
                     setData(response.body());
                 }
                 else{
                     DisplaySnackBar.showSnackBar(getActivity(),response.body().getMessage());
-                }
-                if (getActivity()!= null) {
-                    ((BaseActivity)getActivity()).hideProgress();
                 }
 
             }
@@ -145,5 +153,30 @@ public class FragmentMyTeam extends Fragment {
         recyclerView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
 
+    }
+
+
+
+    private void search(SearchView searchView) {
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                newText=newText.toLowerCase();
+              //  ArrayList<UserInfo> newList=new ArrayList<>();
+                adapter.setFilter(listData);
+                return true;
+            }
+        });
+    }
+
+    public void setFilter(List<MyTeamModel.DataBean> data){
+        data=new ArrayList<>();
+        data.addAll(listData);
+        adapter.notifyDataSetChanged();
     }
 }

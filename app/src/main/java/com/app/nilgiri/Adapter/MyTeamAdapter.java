@@ -11,10 +11,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.app.nilgiri.ApiCalls.ApiInterface;
+import com.app.nilgiri.ApiCalls.Urls;
 import com.app.nilgiri.Models.MyTeamModel;
 import com.app.nilgiri.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+
+import jp.wasabeef.picasso.transformations.CropSquareTransformation;
 
 
 public class MyTeamAdapter extends RecyclerView.Adapter<MyTeamAdapter.ViewHolder>{
@@ -39,7 +44,7 @@ public class MyTeamAdapter extends RecyclerView.Adapter<MyTeamAdapter.ViewHolder
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
         MyTeamModel.DataBean myTeamModelObj = getData.get(position);
         if(myTeamModelObj!=null){
-           //   Picasso.with(context).load(ApiInterface.IMAGE_URL + getData.get(position)).transform(new CropSquareTransformation()).placeholder(R.drawable.ic_launcher_background).into(viewHolder.ivProfile);
+         //   Picasso.with(context).load(Urls.PROFILE_IMAGE_URL + getData.get(position)).transform(new CropSquareTransformation()).placeholder(R.drawable.ic_launcher_background).into(viewHolder.ivProfile);
        // viewHolder.ivProfile.setImageDrawable(myTeamModelObj.);
         viewHolder.txtName.setText(myTeamModelObj.getName());
      //   viewHolder.txtAdmin.setText(myTeamModelObj.());
@@ -64,6 +69,9 @@ public class MyTeamAdapter extends RecyclerView.Adapter<MyTeamAdapter.ViewHolder
         return getData.size();
     }
 
+    public void setFilter(ArrayList<MyTeamModel.DataBean> listData) {
+    }
+
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
@@ -83,7 +91,4 @@ public class MyTeamAdapter extends RecyclerView.Adapter<MyTeamAdapter.ViewHolder
 
         }
     }
-
-
-
 }
