@@ -4,11 +4,12 @@ import java.util.List;
 
 public class MyTeamLeftModel {
 
+
     /**
      * message : Successfully
      * status : 1
      * page_count : 2
-     * data : {"client":{"id":"4","name":"Krishnanand Prajapati","username":"TP884108","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"1"},"leftTeam":[{"id":"23","name":"Abhai  Chaurasia","username":"TP987754","city":"5212","city_text":"Varanasi Cantonment","email":"lovely4mlm@gmail.com","avatar":null,"sales_active":"1"},{"id":"27","name":"vivek pandey","username":"TP493107","city":null,"city_text":null,"email":"vivekpandeyall@gmail.com","avatar":null,"sales_active":"0"},{"id":"28","name":"yuvraj ","username":"TP776442","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"29","name":"sachin gupta","username":"TP575397","city":null,"city_text":null,"email":"sachingunja@gmail.com","avatar":null,"sales_active":"0"},{"id":"31","name":" ","username":"TP470834","city":"5211","city_text":"Varanasi","email":"dkjaiswal8585@gmail.com","avatar":null,"sales_active":"1"},{"id":"32","name":"pravbeen  ","username":"TP499339","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"33","name":"brij mohan","username":"TP400092","city":null,"city_text":null,"email":"sk.chaurasia1976@gmail.com","avatar":null,"sales_active":"0"},{"id":"34","name":"RAVI KUMAR VISHWAKARMA","username":"TP319795","city":null,"city_text":null,"email":"kumarravi210876@gmail.com","avatar":null,"sales_active":"0"},{"id":"37","name":"Brijmohan Kumar Singh","username":"TP187561","city":"1492","city_text":"Ranchi","email":"brij25051989@gmail.com","avatar":null,"sales_active":"1"},{"id":"38","name":"sunil ","username":"TP368124","city":null,"city_text":null,"email":"sk.chaurasia1976@gmail.com","avatar":null,"sales_active":"0"},{"id":"39","name":"amit ","username":"TP721457","city":null,"city_text":null,"email":"sk.chaurasia1976@gmail.com","avatar":null,"sales_active":"0"},{"id":"40","name":"raghvendra ","username":"TP969540","city":null,"city_text":null,"email":"sk.chaurasia1976@gmail.com","avatar":null,"sales_active":"0"},{"id":"41","name":"ashutosh anand","username":"TP191439","city":null,"city_text":null,"email":"ashutoshvansh@gmail.com","avatar":null,"sales_active":"0"},{"id":"42","name":"nidhi ","username":"TP829185","city":null,"city_text":null,"email":"sk.chaurasia1976@gmail.com","avatar":null,"sales_active":"0"},{"id":"59","name":"mahendra  nath","username":"TP335533","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"60","name":"prashant kumar","username":"TP406929","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"87","name":"MOHD farid Alam","username":"TP908680","city":"5211","city_text":"Varanasi","email":"farid751976@gmail.com","avatar":null,"sales_active":"1"},{"id":"95","name":"anita  devi","username":"TP353097","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"96","name":"sandeep  singh","username":"TP217340","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"97","name":"nirmala yadav","username":"TP245514","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"}]}
+     * data : {"client":{"id":"4","name":"Krishnanand Prajapati","username":"TP884108","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"1"},"leftTeam":[{"id":"98","name":"rajesh kumar","username":"TP171397","city":null,"city_text":null,"email":"krrishbns@gmail.com","avatar":null,"sales_active":"0"},{"id":"99","name":"ritesh prajapati","username":"TP268933","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"100","name":"vikash yadav","username":"TP616269","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"101","name":"sandhya pandey pandey","username":"TP999194","city":"5211","city_text":"Varanasi","email":"jitendrapandeyvns1983@gmail.com","avatar":null,"sales_active":"1"},{"id":"102","name":"neelesh pal","username":"TP490715","city":null,"city_text":null,"email":"krrishbns@gmail.com","avatar":null,"sales_active":"0"},{"id":"103","name":"krishna  singh","username":"TP151910","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"118","name":"VANDANA PRAJAPATI","username":"TP631371","city":null,"city_text":null,"email":"KRRISHVNS@GMAIL.COM","avatar":null,"sales_active":"0"},{"id":"123","name":"RAMESH GUPTA","username":"TP223068","city":null,"city_text":null,"email":"RAMESHG@GMAIL.COM","avatar":null,"sales_active":"0"},{"id":"124","name":"ARVIND GUPTA","username":"TP610225","city":null,"city_text":null,"email":"RAMESHG@GMAIL.COM","avatar":null,"sales_active":"0"},{"id":"125","name":"ANITA SINGH","username":"TP419506","city":null,"city_text":null,"email":"RAMESHG@GMAIL.COM","avatar":null,"sales_active":"0"},{"id":"126","name":"SANTOSH KUMAR","username":"TP674712","city":null,"city_text":null,"email":"SANTOSHKUMAR1234@GMAIL.COM","avatar":null,"sales_active":"0"},{"id":"127","name":"SEEMA  SINGH","username":"TP926532","city":null,"city_text":null,"email":"SEEMASANTOSHG@GMAIL.COM","avatar":null,"sales_active":"0"},{"id":"128","name":"Pankaj kumar Singh","username":"TP390117","city":"4760","city_text":"Ghazipur","email":"pankaj.anjanasinghpdp@gmail.com","avatar":null,"sales_active":"0"},{"id":"182","name":"snehlata singh","username":"TP447278","city":null,"city_text":null,"email":"aashu300@gmail.com","avatar":null,"sales_active":"1"},{"id":"183","name":"rajesh kumar","username":"TP350487","city":null,"city_text":null,"email":"kumarbirla210@gmail.com","avatar":null,"sales_active":"0"},{"id":"187","name":"pawan  tripathi","username":"TP169526","city":null,"city_text":null,"email":"chintapiush@gmail.com","avatar":null,"sales_active":"0"},{"id":"222","name":"raj shree","username":"TP720324","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"223","name":"mitu khanna","username":"TP852109","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"1"},{"id":"224","name":"mukesh khanna","username":"TP636151","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"513","name":"Aaseem Khan","username":"TP280094","city":null,"city_text":null,"email":"aaseemkha3323@gmail.com","avatar":null,"sales_active":"0"}]}
      */
 
     private String message;
@@ -51,7 +52,7 @@ public class MyTeamLeftModel {
     public static class DataBean {
         /**
          * client : {"id":"4","name":"Krishnanand Prajapati","username":"TP884108","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"1"}
-         * leftTeam : [{"id":"23","name":"Abhai  Chaurasia","username":"TP987754","city":"5212","city_text":"Varanasi Cantonment","email":"lovely4mlm@gmail.com","avatar":null,"sales_active":"1"},{"id":"27","name":"vivek pandey","username":"TP493107","city":null,"city_text":null,"email":"vivekpandeyall@gmail.com","avatar":null,"sales_active":"0"},{"id":"28","name":"yuvraj ","username":"TP776442","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"29","name":"sachin gupta","username":"TP575397","city":null,"city_text":null,"email":"sachingunja@gmail.com","avatar":null,"sales_active":"0"},{"id":"31","name":" ","username":"TP470834","city":"5211","city_text":"Varanasi","email":"dkjaiswal8585@gmail.com","avatar":null,"sales_active":"1"},{"id":"32","name":"pravbeen  ","username":"TP499339","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"33","name":"brij mohan","username":"TP400092","city":null,"city_text":null,"email":"sk.chaurasia1976@gmail.com","avatar":null,"sales_active":"0"},{"id":"34","name":"RAVI KUMAR VISHWAKARMA","username":"TP319795","city":null,"city_text":null,"email":"kumarravi210876@gmail.com","avatar":null,"sales_active":"0"},{"id":"37","name":"Brijmohan Kumar Singh","username":"TP187561","city":"1492","city_text":"Ranchi","email":"brij25051989@gmail.com","avatar":null,"sales_active":"1"},{"id":"38","name":"sunil ","username":"TP368124","city":null,"city_text":null,"email":"sk.chaurasia1976@gmail.com","avatar":null,"sales_active":"0"},{"id":"39","name":"amit ","username":"TP721457","city":null,"city_text":null,"email":"sk.chaurasia1976@gmail.com","avatar":null,"sales_active":"0"},{"id":"40","name":"raghvendra ","username":"TP969540","city":null,"city_text":null,"email":"sk.chaurasia1976@gmail.com","avatar":null,"sales_active":"0"},{"id":"41","name":"ashutosh anand","username":"TP191439","city":null,"city_text":null,"email":"ashutoshvansh@gmail.com","avatar":null,"sales_active":"0"},{"id":"42","name":"nidhi ","username":"TP829185","city":null,"city_text":null,"email":"sk.chaurasia1976@gmail.com","avatar":null,"sales_active":"0"},{"id":"59","name":"mahendra  nath","username":"TP335533","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"60","name":"prashant kumar","username":"TP406929","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"87","name":"MOHD farid Alam","username":"TP908680","city":"5211","city_text":"Varanasi","email":"farid751976@gmail.com","avatar":null,"sales_active":"1"},{"id":"95","name":"anita  devi","username":"TP353097","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"96","name":"sandeep  singh","username":"TP217340","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"97","name":"nirmala yadav","username":"TP245514","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"}]
+         * leftTeam : [{"id":"98","name":"rajesh kumar","username":"TP171397","city":null,"city_text":null,"email":"krrishbns@gmail.com","avatar":null,"sales_active":"0"},{"id":"99","name":"ritesh prajapati","username":"TP268933","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"100","name":"vikash yadav","username":"TP616269","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"101","name":"sandhya pandey pandey","username":"TP999194","city":"5211","city_text":"Varanasi","email":"jitendrapandeyvns1983@gmail.com","avatar":null,"sales_active":"1"},{"id":"102","name":"neelesh pal","username":"TP490715","city":null,"city_text":null,"email":"krrishbns@gmail.com","avatar":null,"sales_active":"0"},{"id":"103","name":"krishna  singh","username":"TP151910","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"118","name":"VANDANA PRAJAPATI","username":"TP631371","city":null,"city_text":null,"email":"KRRISHVNS@GMAIL.COM","avatar":null,"sales_active":"0"},{"id":"123","name":"RAMESH GUPTA","username":"TP223068","city":null,"city_text":null,"email":"RAMESHG@GMAIL.COM","avatar":null,"sales_active":"0"},{"id":"124","name":"ARVIND GUPTA","username":"TP610225","city":null,"city_text":null,"email":"RAMESHG@GMAIL.COM","avatar":null,"sales_active":"0"},{"id":"125","name":"ANITA SINGH","username":"TP419506","city":null,"city_text":null,"email":"RAMESHG@GMAIL.COM","avatar":null,"sales_active":"0"},{"id":"126","name":"SANTOSH KUMAR","username":"TP674712","city":null,"city_text":null,"email":"SANTOSHKUMAR1234@GMAIL.COM","avatar":null,"sales_active":"0"},{"id":"127","name":"SEEMA  SINGH","username":"TP926532","city":null,"city_text":null,"email":"SEEMASANTOSHG@GMAIL.COM","avatar":null,"sales_active":"0"},{"id":"128","name":"Pankaj kumar Singh","username":"TP390117","city":"4760","city_text":"Ghazipur","email":"pankaj.anjanasinghpdp@gmail.com","avatar":null,"sales_active":"0"},{"id":"182","name":"snehlata singh","username":"TP447278","city":null,"city_text":null,"email":"aashu300@gmail.com","avatar":null,"sales_active":"1"},{"id":"183","name":"rajesh kumar","username":"TP350487","city":null,"city_text":null,"email":"kumarbirla210@gmail.com","avatar":null,"sales_active":"0"},{"id":"187","name":"pawan  tripathi","username":"TP169526","city":null,"city_text":null,"email":"chintapiush@gmail.com","avatar":null,"sales_active":"0"},{"id":"222","name":"raj shree","username":"TP720324","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"223","name":"mitu khanna","username":"TP852109","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"1"},{"id":"224","name":"mukesh khanna","username":"TP636151","city":null,"city_text":null,"email":"krrishvns@gmail.com","avatar":null,"sales_active":"0"},{"id":"513","name":"Aaseem Khan","username":"TP280094","city":null,"city_text":null,"email":"aaseemkha3323@gmail.com","avatar":null,"sales_active":"0"}]
          */
 
         private ClientBean client;
@@ -161,21 +162,21 @@ public class MyTeamLeftModel {
 
         public static class LeftTeamBean {
             /**
-             * id : 23
-             * name : Abhai  Chaurasia
-             * username : TP987754
-             * city : 5212
-             * city_text : Varanasi Cantonment
-             * email : lovely4mlm@gmail.com
+             * id : 98
+             * name : rajesh kumar
+             * username : TP171397
+             * city : null
+             * city_text : null
+             * email : krrishbns@gmail.com
              * avatar : null
-             * sales_active : 1
+             * sales_active : 0
              */
 
             private String id;
             private String name;
             private String username;
-            private String city;
-            private String city_text;
+            private Object city;
+            private Object city_text;
             private String email;
             private Object avatar;
             private String sales_active;
@@ -204,19 +205,19 @@ public class MyTeamLeftModel {
                 this.username = username;
             }
 
-            public String getCity() {
+            public Object getCity() {
                 return city;
             }
 
-            public void setCity(String city) {
+            public void setCity(Object city) {
                 this.city = city;
             }
 
-            public String getCity_text() {
+            public Object getCity_text() {
                 return city_text;
             }
 
-            public void setCity_text(String city_text) {
+            public void setCity_text(Object city_text) {
                 this.city_text = city_text;
             }
 

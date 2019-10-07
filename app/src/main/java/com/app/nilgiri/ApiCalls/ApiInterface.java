@@ -58,7 +58,7 @@ public interface ApiInterface {
     Call<MyTeamModel> getMyTeam(@Path("company_id") String company_Id, @Query("api_key") String apiKey);
 
     @GET("getResponse/leftTeam/{company_id}")
-    Call<MyTeamLeftModel> getLeftTeam(@Path("company_id") String company_Id, @Query("api_key") String apiKey,@Query("page") int page);
+    Call<MyTeamLeftModel> getLeftTeam(@Path("company_id") String company_Id, @Query("api_key") String apiKey,@Query("page") String page);
 
     @GET("getResponse/rightTeam/{company_id}")
     Call<MyTeamRightModel> getRightTeam(@Path("company_id") String company_Id, @Query("api_key") String apiKey);

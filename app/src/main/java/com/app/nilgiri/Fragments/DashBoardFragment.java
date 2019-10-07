@@ -238,21 +238,27 @@ public class DashBoardFragment extends Fragment implements View.OnClickListener{
         call.enqueue(new Callback<Notification>() {
             @Override
             public void onResponse(Call<Notification> call, Response<Notification> response) {
-                Log.e("ResponseData","ResponseData");
-                if(response.body().getStatus()==1){
-                    Log.e("ResponseData","ResponseData"+response.body());
-                    // for(int i=0;i<response.body().getData().size();i++){
+                try{
+
+                    Log.e("ResponseData","ResponseData");
+                    if(response.body().getStatus()==1){
+                        Log.e("ResponseData","ResponseData"+response.body());
+                        // for(int i=0;i<response.body().getData().size();i++){
                         StringBuilder builder = new StringBuilder();
                         for (String value : response.body().getData()) {
                             builder.append(" "+value);
                         }
                         String text = builder.toString();
-                    ///}
-                    latest_update_text.setText(text);
+                        ///}
+                        latest_update_text.setText(text);
+                    }
+                    else{
+                        DisplaySnackBar.showSnackBar(getActivity(),response.body().getMessage());
+                    }
+                }catch (Exception e){
+                    e.getStackTrace();
                 }
-                else{
-                    DisplaySnackBar.showSnackBar(getActivity(),response.body().getMessage());
-                }
+
             }
 
             @Override

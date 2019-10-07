@@ -248,6 +248,7 @@ public class FragmentProfile extends Fragment implements View.OnClickListener {
     }
 
     private void updateUserProfile(String add, String mail, String phone_no,String mcity,  String mstate) {
+        try{
         if (getActivity()!= null) {
             ((BaseActivity) getActivity()).showProgress();
         }
@@ -282,6 +283,9 @@ public class FragmentProfile extends Fragment implements View.OnClickListener {
                 }
             }
         });
+        }catch (Exception e){
+            e.getStackTrace();
+        }
     }
 
 

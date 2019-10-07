@@ -31,6 +31,9 @@ import com.app.nilgiri.Utils.DisplaySnackBar;
 import com.paginate.Paginate;
 import com.squareup.picasso.Picasso;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,20 +53,22 @@ public class FragmentLeftTeam extends Fragment  {
     private TextView mName,mUserName,mEmail,mCity,mSales,mRank,mAction;
 
 
-    ProgressBar progressBar;
+   private ProgressBar progressBar;
+    MyTeamLeftModel.DataBean.ClientBean listDataClient ;
     ArrayList<MyTeamLeftModel.DataBean.LeftTeamBean> listData  = new ArrayList<>();
     SharedPreferences pref;
 
     final int pageSize = 20;
    // int mCurrentPage = 1;
-    public static  int PAGE_START = 1;
+    public static  String PAGE_START = "1";
     private boolean isLoading = false;
     private boolean isLastPage = false;
     private int page = 1;
     String companyId  ;
-    private int currentPage = PAGE_START;
+    private String currentPage = PAGE_START;
     private int totalPage = 10;
 
+    String client_id,client_name,client_username,client_city,client_citytext,client_email,client_avtar_client,clientsales_active;
 
     @Nullable
     @Override
@@ -116,7 +121,8 @@ public class FragmentLeftTeam extends Fragment  {
 
     LinearLayoutManager mlayoutManager;
     private  void initAdapter(){
-        adapter = new MyTeamLeftAdapter(getContext(),listData);
+
+
         mlayoutManager= new LinearLayoutManager(getContext(),LinearLayoutManager.VERTICAL,false);
         recyclerView.setLayoutManager(mlayoutManager);
         recyclerView.setAdapter(adapter);
@@ -125,7 +131,7 @@ public class FragmentLeftTeam extends Fragment  {
             @Override
             protected void loadMoreItems() {
                 isLoading = true;
-                currentPage++;
+                //currentPage++;
               //  doApiCall();
                 new Handler().postDelayed(new Runnable() {
                     @Override
@@ -134,7 +140,7 @@ public class FragmentLeftTeam extends Fragment  {
                     }
                 }, 1000);
             }
-            
+
             @Override
             public boolean isLastPage() {
                 return isLastPage;
@@ -154,25 +160,37 @@ public class FragmentLeftTeam extends Fragment  {
         }
         ApiInterface service= RetrofitClient.getClient().create(ApiInterface.class);
 
-        Call<MyTeamLeftModel> call=service.getLeftTeam(company_id,Urls.API_KEY,PAGE_START);
+        Call<MyTeamLeftModel> call=service.getLeftTeam(company_id,Urls.API_KEY,"1");
         call.enqueue(new Callback<MyTeamLeftModel>() {
             @Override
             public void onResponse(Call<MyTeamLeftModel> call, Response<MyTeamLeftModel> response) {
-                Log.e("Response","Response"+response.body().getData());
+                Log.e("Response","Response"+response.body().getData().getLeftTeam().size());
+
                 if(response.body().getStatus()==1){
                   //  setData(response.body().getData());
                    // listData.clear();
+                    client_id=(response.body().getData().getClient().getId());
+                    client_name=(response.body().getData().getClient().getName());
+                    client_username=(response.body().getData().getClient().getUsername());
+                    client_city=(String.valueOf(response.body().getData().getClient().getCity()));
+                    client_citytext=(String.valueOf(response.body().getData().getClient().getCity_text()));
+                    client_email=(response.body().getData().getClient().getEmail());
+                    client_avtar_client=(String.valueOf(response.body().getData().getClient().getAvatar()));
+                    clientsales_active = (response.body().getData().getClient().getSales_active());
+
                     listData.addAll(response.body().getData().getLeftTeam());
+                    adapter = new MyTeamLeftAdapter(getActivity(),client_id,client_name,client_username,client_city,client_citytext,client_email,client_avtar_client,clientsales_active,listData);
+
                     recyclerView.setAdapter(adapter);
                //     adapter.notifyDataSetChanged();
                  //   adapter.addBottomitem();
 
-                    if(currentPage<=totalPage){
+                   /* if(currentPage<=totalPage){
                         adapter.addBottomitem();
                     }else {
                         isLastPage=true;
-                    }
-                }else{
+                    }*/
+                } else{
                     DisplaySnackBar.showSnackBar(getActivity(),response.body().getMessage());
                 }
                 if (getActivity()!= null) {
@@ -196,7 +214,6 @@ public class FragmentLeftTeam extends Fragment  {
         adapter.notifyDataSetChanged();
     }
 
-
     private   void loadNextPage(){
         progressBar.setVisibility(View.VISIBLE);
         ApiInterface service= RetrofitClient.getClient().create(ApiInterface.class);
@@ -209,25 +226,26 @@ public class FragmentLeftTeam extends Fragment  {
                 if(response.body().getStatus()==1) {
                     //  setData(response.body().getData());
                     //     adapter.notifyDataSetChanged();
+                    if (response.body().getData().getLeftTeam().size() == 0) {
+                        progressBar.setVisibility(View.GONE);
 
-                    if (getActivity() != null) {
-                        ((BaseActivity) getActivity()).hideProgress();
-                    }
-                    List<MyTeamLeftModel.DataBean.LeftTeamBean> tempdata = response.body().getData().getLeftTeam();
-                    adapter.removedLastEmptyItem();
-                    isLoading = false;
-                    adapter.addAll(tempdata);
-
-                    if (currentPage != totalPage) {
-                        adapter.addBottomitem();
                     } else {
-                        isLastPage = true;
+                        List<MyTeamLeftModel.DataBean.LeftTeamBean> tempdata = response.body().getData().getLeftTeam();
+                        adapter.removedLastEmptyItem();
+                        isLoading = false;
+                        adapter.addAll(tempdata);
+                        adapter.addBottomitem();
+                       /* if (currentPage != totalPage) {
+                            adapter.addBottomitem();
+                        } else {
+                            isLastPage = true;
+                        }*/
+                        progressBar.setVisibility(View.GONE);
                     }
-                    progressBar.setVisibility(View.GONE);
-
                 }else{
                     DisplaySnackBar.showSnackBar(getActivity(),response.body().getMessage());
                 }
+
 
             }
 
